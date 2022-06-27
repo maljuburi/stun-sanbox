@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  server:
+    volumes:
+      - ./:/app
+    command: yarn dev
+    env_file:
+      - ./.env
+    

@@ -1,7 +1,7 @@
 'use strict'
 const stun = require('stun')
 const { httpHealth } = require('./http-health')
-const PORT = process.env.PORT || 3478
+const PORT = 3478
 const server = stun.createServer({ type: 'udp4' })
 const { STUN_BINDING_RESPONSE, STUN_EVENT_BINDING_REQUEST } = stun.constants
 const userAgent = `node/${process.version} stun/v1.0.0`

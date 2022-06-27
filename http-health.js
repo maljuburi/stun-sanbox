@@ -7,7 +7,7 @@ module.exports = {
     }
 
     const server = http.createServer(requestListener)
-    server.listen(process.env.PORT || 3478)
-    console.log(`http listening on port: ${process.env.PORT || 3478}`)
+    server.listen(5000)
+    console.log(`http listening on port: ${5000}`)
   },
 }

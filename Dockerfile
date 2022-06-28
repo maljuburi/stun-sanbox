@@ -8,4 +8,5 @@ RUN if [ "$NODE_ENV" = "development" ]; \
 	fi
 COPY . .
 EXPOSE 3478:3478/udp
+EXPOSE 3000
 CMD ["node", "server.js"]

@@ -7,5 +7,5 @@ RUN if [ "$NODE_ENV" = "development" ]; \
 	else yarn --prod; \
 	fi
 COPY . .
-EXPOSE 3478
+EXPOSE 3478:3478/udp
 CMD ["node", "server.js"]
